@@ -1,16 +1,18 @@
 import {TreeNode} from './TreeNode';
 
-export class TreeVisService {
+ class TreeVisService {
     public tree: TreeNode | null;
 
-    constructor(tree: TreeNode | null) {
-        this.tree = tree;
-    }
-
+    // constructor(tree: TreeNode | null) {
+    //     this.tree = tree;
+    // }
+    
     public setTreeRoot(val: number, tree: TreeNode | null): TreeNode {
         const tree1 = new TreeNode(val);
         return tree1;
     }
+
+    
 
     public printTree(tree: TreeNode | null): void {
         if (tree !== null) {
@@ -182,3 +184,5 @@ export class TreeVisService {
         return treeNode;
     }
 }
+
+var  obj = new TreeVisService();
